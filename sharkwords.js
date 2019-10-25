@@ -12,7 +12,7 @@ let numWrong = 0;
 const createDivsForChars = (word) => {
 
   for (letter of word) {
-    $('#word-container').append(`<div class="letter-box ${letter}">${letter}</div>`)
+    $('#word-container').append(`<div class="letter-box ${letter}"></div>`)
   }
 };
 
@@ -32,6 +32,8 @@ for (letter of ALPHABET) {
  */
 const disableLetterButton = (buttonEl) => {
   // Replace this with your code
+  
+  $(buttonEl).attr('disabled', true);
 };
 
 
